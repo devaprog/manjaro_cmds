@@ -1,0 +1,14 @@
+#merge pdf
+pdfunite i1.pdf i2.pdf i3.pdf i4.pdf i5.pdf ... o.pdf
+
+#split pdf
+qpdf input.pdf --pages . start_pg_number stop_pg_number output.pdf
+
+#img2pdf
+convert i1.png i2.png i3.png i4.png i5.png ... o.pdf
+
+#clr2b&w
+convert i.pdf -colorspace GRAY o.pdf
+
+#clr (yellow) tint pdf
+convert i.pdf -fill '#f0e68c' -colorize 30% o.pdf 
